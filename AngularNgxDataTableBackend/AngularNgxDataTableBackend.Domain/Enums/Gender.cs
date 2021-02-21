@@ -1,5 +1,4 @@
-﻿
-namespace AngularNgxDataTableBackend.Domain.Enums
+﻿namespace AngularNgxDataTableBackend.Domain.Enums
 {
     public enum Gender
     {

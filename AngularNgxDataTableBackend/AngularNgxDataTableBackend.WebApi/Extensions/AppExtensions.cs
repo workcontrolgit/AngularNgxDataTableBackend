@@ -13,6 +13,7 @@ namespace AngularNgxDataTableBackend.WebApi.Extensions
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "CleanArchitecture.AngularNgxDataTableBackend.WebApi");
             });
         }
+
         public static void UseErrorHandlingMiddleware(this IApplicationBuilder app)
         {
             app.UseMiddleware<ErrorHandlerMiddleware>();

@@ -11,17 +11,17 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
 
-
 namespace AngularNgxDataTableBackend.WebApi
 {
     public class Startup
     {
         public IConfiguration _config { get; }
+
         public Startup(IConfiguration configuration)
         {
             _config = configuration;
-
         }
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplicationLayer();

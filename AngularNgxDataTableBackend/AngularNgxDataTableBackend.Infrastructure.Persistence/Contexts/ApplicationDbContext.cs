@@ -23,6 +23,7 @@ namespace AngularNgxDataTableBackend.Infrastructure.Persistence.Contexts
             _dateTime = dateTime;
             _loggerFactory = loggerFactory;
         }
+
         public DbSet<Position> Positions { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
@@ -34,6 +35,7 @@ namespace AngularNgxDataTableBackend.Infrastructure.Persistence.Contexts
                     case EntityState.Added:
                         entry.Entity.Created = _dateTime.NowUtc;
                         break;
+
                     case EntityState.Modified:
                         entry.Entity.LastModified = _dateTime.NowUtc;
                         break;
@@ -41,6 +43,7 @@ namespace AngularNgxDataTableBackend.Infrastructure.Persistence.Contexts
             }
             return base.SaveChangesAsync(cancellationToken);
         }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             var _mockData = this.Database.GetService<IMockService>();
@@ -48,9 +51,8 @@ namespace AngularNgxDataTableBackend.Infrastructure.Persistence.Contexts
             builder.Entity<Position>().HasData(seedPositions);
 
             base.OnModelCreating(builder);
-
-
         }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLoggerFactory(_loggerFactory);

@@ -12,11 +12,13 @@ namespace AngularNgxDataTableBackend.Infrastructure.Shared.Services
             var positionFaker = new PositionInsertBogusConfig();
             return positionFaker.Generate(rowCount);
         }
+
         public List<Employee> GetEmployees(int rowCount)
         {
             var positionFaker = new EmployeeBogusConfig();
             return positionFaker.Generate(rowCount);
         }
+
         public List<Position> SeedPositions(int rowCount)
         {
             var seedPositionFaker = new PositionSeedBogusConfig();

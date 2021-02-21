@@ -39,7 +39,6 @@ namespace AngularNgxDataTableBackend.Infrastructure.Shared.Services
                 smtp.Authenticate(_mailSettings.SmtpUser, _mailSettings.SmtpPass);
                 await smtp.SendAsync(email);
                 smtp.Disconnect(true);
-
             }
             catch (System.Exception ex)
             {
