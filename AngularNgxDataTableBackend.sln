@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C78D1CF0-35B3-48AE-9976-104D1D988430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularNgxDataTableBackend.WebApi", "AngularNgxDataTableBackend\AngularNgxDataTableBackend.WebApi\AngularNgxDataTableBackend.WebApi.csproj", "{A23C15BD-20EE-4990-B971-C6BB3214E30F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{86E77E88-8E31-4842-943A-223E22D36AA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularNgxDataTableBackend.Application", "AngularNgxDataTableBackend\AngularNgxDataTableBackend.Application\AngularNgxDataTableBackend.Application.csproj", "{DA103352-FEEC-45B8-A4B5-96B83920E115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularNgxDataTableBackend.Domain", "AngularNgxDataTableBackend\AngularNgxDataTableBackend.Domain\AngularNgxDataTableBackend.Domain.csproj", "{63BAB108-0C54-4501-BA49-3D94EF050397}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{7256BE53-53AA-453C-9B25-860676CA9F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularNgxDataTableBackend.Infrastructure.Persistence", "AngularNgxDataTableBackend\AngularNgxDataTableBackend.Infrastructure.Persistence\AngularNgxDataTableBackend.Infrastructure.Persistence.csproj", "{85B67D47-7EF8-4495-AF8C-597B5268980C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularNgxDataTableBackend.Infrastructure.Shared", "AngularNgxDataTableBackend\AngularNgxDataTableBackend.Infrastructure.Shared\AngularNgxDataTableBackend.Infrastructure.Shared.csproj", "{22ABAF2F-2692-401E-8F5F-2ECD8830B63D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A23C15BD-20EE-4990-B971-C6BB3214E30F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23C15BD-20EE-4990-B971-C6BB3214E30F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23C15BD-20EE-4990-B971-C6BB3214E30F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23C15BD-20EE-4990-B971-C6BB3214E30F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA103352-FEEC-45B8-A4B5-96B83920E115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA103352-FEEC-45B8-A4B5-96B83920E115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA103352-FEEC-45B8-A4B5-96B83920E115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA103352-FEEC-45B8-A4B5-96B83920E115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63BAB108-0C54-4501-BA49-3D94EF050397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63BAB108-0C54-4501-BA49-3D94EF050397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63BAB108-0C54-4501-BA49-3D94EF050397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63BAB108-0C54-4501-BA49-3D94EF050397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B67D47-7EF8-4495-AF8C-597B5268980C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B67D47-7EF8-4495-AF8C-597B5268980C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B67D47-7EF8-4495-AF8C-597B5268980C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B67D47-7EF8-4495-AF8C-597B5268980C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22ABAF2F-2692-401E-8F5F-2ECD8830B63D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22ABAF2F-2692-401E-8F5F-2ECD8830B63D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22ABAF2F-2692-401E-8F5F-2ECD8830B63D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22ABAF2F-2692-401E-8F5F-2ECD8830B63D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A23C15BD-20EE-4990-B971-C6BB3214E30F} = {C78D1CF0-35B3-48AE-9976-104D1D988430}
+		{DA103352-FEEC-45B8-A4B5-96B83920E115} = {86E77E88-8E31-4842-943A-223E22D36AA0}
+		{63BAB108-0C54-4501-BA49-3D94EF050397} = {86E77E88-8E31-4842-943A-223E22D36AA0}
+		{85B67D47-7EF8-4495-AF8C-597B5268980C} = {7256BE53-53AA-453C-9B25-860676CA9F87}
+		{22ABAF2F-2692-401E-8F5F-2ECD8830B63D} = {7256BE53-53AA-453C-9B25-860676CA9F87}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E904479-E4BB-4903-B132-3F723CDF7A23}
+	EndGlobalSection
+EndGlobal
