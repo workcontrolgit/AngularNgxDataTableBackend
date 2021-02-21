@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace AngularNgxDataTableBackend.Application.Features.Positions.Queries.GetPositions
 {
-    public partial class PagedPositionCommand : IRequest<PagedDataTableResponse<IEnumerable<Entity>>>
+    public partial class PagedPositionsQuery : IRequest<PagedDataTableResponse<IEnumerable<Entity>>>
     {
         //strong type input parameters
         public int RowCount { get; set; }
@@ -25,7 +25,7 @@ namespace AngularNgxDataTableBackend.Application.Features.Positions.Queries.GetP
         public SearchCriteria SearchCriteria { get; set; }
     }
 
-    public class PagePositionCommandHandler : IRequestHandler<PagedPositionCommand, PagedDataTableResponse<IEnumerable<Entity>>>
+    public class PagePositionCommandHandler : IRequestHandler<PagedPositionsQuery, PagedDataTableResponse<IEnumerable<Entity>>>
     {
         private readonly IPositionRepositoryAsync _positionRepository;
         private readonly IMapper _mapper;
@@ -38,7 +38,7 @@ namespace AngularNgxDataTableBackend.Application.Features.Positions.Queries.GetP
             _modelHelper = modelHelper;
         }
 
-        public async Task<PagedDataTableResponse<IEnumerable<Entity>>> Handle(PagedPositionCommand request, CancellationToken cancellationToken)
+        public async Task<PagedDataTableResponse<IEnumerable<Entity>>> Handle(PagedPositionsQuery request, CancellationToken cancellationToken)
         {
             var validFilter = new GetPositionsQuery();
 

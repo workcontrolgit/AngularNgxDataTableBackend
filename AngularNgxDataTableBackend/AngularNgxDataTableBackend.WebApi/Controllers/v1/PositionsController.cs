@@ -70,7 +70,7 @@ namespace AngularNgxDataTableBackend.WebApi.Controllers.v1
         [HttpPost]
         [Route("Paged")]
         // [Authorize]
-        public async Task<IActionResult> Paged(PagedPositionCommand command)
+        public async Task<IActionResult> Paged(PagedPositionsQuery command)
         {
             return Ok(await Mediator.Send(command));
         }
