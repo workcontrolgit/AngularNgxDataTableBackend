@@ -13,7 +13,7 @@ namespace AngularNgxDataTableBackend.Application.Features.Positions.Queries.GetP
 {
     public partial class PagedPositionsQuery : IRequest<PagedDataTableResponse<IEnumerable<Entity>>>
     {
-        //strong type input parameters
+        //strong type input parameters 
         public int RowCount { get; set; }
 
         public int Draw { get; set; } //page number
