@@ -14,15 +14,12 @@ namespace AngularNgxDataTableBackend.Application.Features.Positions.Queries.GetP
     public partial class PagedPositionsQuery : IRequest<PagedDataTableResponse<IEnumerable<Entity>>>
     {
         //strong type input parameters 
-        public int RowCount { get; set; }
-
         public int Draw { get; set; } //page number
         public int Start { get; set; } //Paging first record indicator. This is the start point in the current data set (0 index based - i.e. 0 is the first record).
         public int Length { get; set; } //page size
         public IList<Order> Order { get; set; } //Order by
         public Search Search { get; set; } //search criteria
         public IList<Column> Columns { get; set; } //select fields
-        public SearchCriteria SearchCriteria { get; set; }
     }
 
     public class PagePositionCommandHandler : IRequestHandler<PagedPositionsQuery, PagedDataTableResponse<IEnumerable<Entity>>>
@@ -64,7 +61,7 @@ namespace AngularNgxDataTableBackend.Application.Features.Positions.Queries.GetP
                     break;
             }
 
-            // Map Search > Searchable columns
+            // Map Search > searchable columns
             if (!string.IsNullOrEmpty(request.Search.Value))
             {
                 //limit to fields in view model
