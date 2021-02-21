@@ -1,5 +1,4 @@
-﻿
-namespace AngularNgxDataTableBackend.Application.Parameters
+﻿namespace AngularNgxDataTableBackend.Application.Parameters
 {
     public class RecordsCount
     {

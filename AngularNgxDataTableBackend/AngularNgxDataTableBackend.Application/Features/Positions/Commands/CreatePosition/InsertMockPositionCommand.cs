@@ -10,9 +10,11 @@ namespace AngularNgxDataTableBackend.Application.Features.Positions.Commands.Cre
     {
         public int RowCount { get; set; }
     }
+
     public class SeedPositionCommandHandler : IRequestHandler<InsertMockPositionCommand, Response<int>>
     {
         private readonly IPositionRepositoryAsync _positionRepository;
+
         public SeedPositionCommandHandler(IPositionRepositoryAsync positionRepository)
         {
             _positionRepository = positionRepository;

@@ -1,5 +1,4 @@
-﻿
-namespace AngularNgxDataTableBackend.WebApi.Models
+﻿namespace AngularNgxDataTableBackend.WebApi.Models
 {
     public class Metadata
     {

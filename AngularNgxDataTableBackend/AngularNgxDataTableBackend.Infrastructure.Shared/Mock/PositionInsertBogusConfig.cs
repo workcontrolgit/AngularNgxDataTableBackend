@@ -1,7 +1,6 @@
 ﻿using AngularNgxDataTableBackend.Domain.Entities;
 using Bogus;
 
-
 namespace AngularNgxDataTableBackend.Infrastructure.Shared.Mock
 {
     public class PositionInsertBogusConfig : Faker<Position>

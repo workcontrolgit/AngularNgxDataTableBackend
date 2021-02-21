@@ -14,13 +14,16 @@ namespace AngularNgxDataTableBackend.Application.Features.Positions.Commands.Upd
         public string Title { get; set; }
         public string Description { get; set; }
         public decimal Salary { get; set; }
+
         public class UpdatePositionCommandHandler : IRequestHandler<UpdatePositionCommand, Response<Guid>>
         {
             private readonly IPositionRepositoryAsync _positionRepository;
+
             public UpdatePositionCommandHandler(IPositionRepositoryAsync positionRepository)
             {
                 _positionRepository = positionRepository;
             }
+
             public async Task<Response<Guid>> Handle(UpdatePositionCommand command, CancellationToken cancellationToken)
             {
                 var position = await _positionRepository.GetByIdAsync(command.Id);

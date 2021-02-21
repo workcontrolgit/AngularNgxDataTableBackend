@@ -68,7 +68,7 @@ namespace AngularNgxDataTableBackend.WebApi.Extensions
                 ;
         }
 
-        //Configure CORS to allow any origin, header and method. 
+        //Configure CORS to allow any origin, header and method.
         //Change the CORS policy based on your requirements.
         //More info see: https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-3.0
 
@@ -86,7 +86,6 @@ namespace AngularNgxDataTableBackend.WebApi.Extensions
             });
         }
 
-
         public static void AddVersionedApiExplorerExtension(this IServiceCollection services)
         {
             services.AddVersionedApiExplorer(o =>
@@ -95,19 +94,21 @@ namespace AngularNgxDataTableBackend.WebApi.Extensions
                 o.SubstituteApiVersionInUrl = true;
             });
         }
+
         public static void AddApiVersioningExtension(this IServiceCollection services)
         {
             services.AddApiVersioning(config =>
             {
                 // Specify the default API Version as 1.0
                 config.DefaultApiVersion = new ApiVersion(1, 0);
-                // If the client hasn't specified the API version in the request, use the default API version number 
+                // If the client hasn't specified the API version in the request, use the default API version number
                 config.AssumeDefaultVersionWhenUnspecified = true;
                 // Advertise the API versions supported for the particular endpoint
                 config.ReportApiVersions = true;
             });
         }
-        static string XmlCommentsFilePath
+
+        private static string XmlCommentsFilePath
         {
             get
             {

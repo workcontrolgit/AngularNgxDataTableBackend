@@ -10,7 +10,9 @@ namespace AngularNgxDataTableBackend.Application.Exceptions
         {
             Errors = new List<string>();
         }
+
         public List<string> Errors { get; }
+
         public ValidationException(IEnumerable<ValidationFailure> failures)
             : this()
         {

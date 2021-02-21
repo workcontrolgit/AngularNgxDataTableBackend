@@ -1,6 +1,6 @@
-﻿using AngularNgxDataTableBackend.Application.Parameters;
-using AngularNgxDataTableBackend.Application.Interfaces;
+﻿using AngularNgxDataTableBackend.Application.Interfaces;
 using AngularNgxDataTableBackend.Application.Interfaces.Repositories;
+using AngularNgxDataTableBackend.Application.Parameters;
 using AngularNgxDataTableBackend.Application.Wrappers;
 using AngularNgxDataTableBackend.Domain.Entities;
 using AutoMapper;
@@ -13,8 +13,9 @@ namespace AngularNgxDataTableBackend.Application.Features.Positions.Queries.GetP
 {
     public partial class PagedPositionsQuery : IRequest<PagedDataTableResponse<IEnumerable<Entity>>>
     {
-        //strong type input parameters 
+        //strong type input parameters
         public int Draw { get; set; } //page number
+
         public int Start { get; set; } //Paging first record indicator. This is the start point in the current data set (0 index based - i.e. 0 is the first record).
         public int Length { get; set; } //page size
         public IList<Order> Order { get; set; } //Order by

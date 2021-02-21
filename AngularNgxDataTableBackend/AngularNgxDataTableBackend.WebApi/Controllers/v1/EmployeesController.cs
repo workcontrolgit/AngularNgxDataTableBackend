@@ -15,11 +15,9 @@ namespace AngularNgxDataTableBackend.WebApi.Controllers.v1
         /// <param name="filter"></param>
         /// <returns></returns>
         [HttpGet]
-
         public async Task<IActionResult> Get([FromQuery] GetEmployeesQuery filter)
         {
             return Ok(await Mediator.Send(filter));
         }
-
     }
 }
