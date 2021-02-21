@@ -39,7 +39,7 @@
             <param name="command"></param>
             <returns></returns>
         </member>
-        <member name="M:AngularNgxDataTableBackend.WebApi.Controllers.v1.PositionsController.Paged(AngularNgxDataTableBackend.Application.Features.Positions.Queries.GetPositions.PagedPositionQuery)">
+        <member name="M:AngularNgxDataTableBackend.WebApi.Controllers.v1.PositionsController.Paged(AngularNgxDataTableBackend.Application.Features.Positions.Queries.GetPositions.PagedPositionsQuery)">
             <summary>
             Support Ngx-DataTables https://medium.com/scrum-and-coke/angular-11-pagination-of-zillion-rows-45d8533538c0
             </summary>

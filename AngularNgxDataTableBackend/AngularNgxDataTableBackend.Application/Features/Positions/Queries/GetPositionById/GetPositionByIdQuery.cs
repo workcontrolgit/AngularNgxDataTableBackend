@@ -12,13 +12,16 @@ namespace AngularNgxDataTableBackend.Application.Features.Positions.Queries.GetP
     public class GetPositionByIdQuery : IRequest<Response<Position>>
     {
         public Guid Id { get; set; }
+
         public class GetPositionByIdQueryHandler : IRequestHandler<GetPositionByIdQuery, Response<Position>>
         {
             private readonly IPositionRepositoryAsync _positionRepository;
+
             public GetPositionByIdQueryHandler(IPositionRepositoryAsync positionRepository)
             {
                 _positionRepository = positionRepository;
             }
+
             public async Task<Response<Position>> Handle(GetPositionByIdQuery query, CancellationToken cancellationToken)
             {
                 var position = await _positionRepository.GetByIdAsync(query.Id);

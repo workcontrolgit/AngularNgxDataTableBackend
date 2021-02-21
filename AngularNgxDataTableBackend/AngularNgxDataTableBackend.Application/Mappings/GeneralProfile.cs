@@ -15,5 +15,4 @@ namespace AngularNgxDataTableBackend.Application.Mappings
             CreateMap<CreatePositionCommand, Position>();
         }
     }
-
 }

@@ -1,5 +1,4 @@
-﻿
-namespace AngularNgxDataTableBackend.Application.DTOs.Email
+﻿namespace AngularNgxDataTableBackend.Application.DTOs.Email
 {
     public class EmailRequest
     {

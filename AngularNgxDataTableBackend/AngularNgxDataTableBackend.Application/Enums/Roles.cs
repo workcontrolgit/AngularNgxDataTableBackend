@@ -1,5 +1,4 @@
-﻿
-namespace AngularNgxDataTableBackend.Application.Enums
+﻿namespace AngularNgxDataTableBackend.Application.Enums
 {
     public enum Roles
     {

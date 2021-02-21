@@ -2,7 +2,6 @@
 using AngularNgxDataTableBackend.Application.Helpers;
 using AngularNgxDataTableBackend.Application.Interfaces;
 using AngularNgxDataTableBackend.Domain.Entities;
-using AutoMapper;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;

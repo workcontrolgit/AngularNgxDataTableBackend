@@ -16,10 +16,12 @@ namespace AngularNgxDataTableBackend.Application.Features.Positions.Commands.Cre
         public string PositionDescription { get; set; }
         public decimal PositionSalary { get; set; }
     }
+
     public class CreatePositionCommandHandler : IRequestHandler<CreatePositionCommand, Response<Guid>>
     {
         private readonly IPositionRepositoryAsync _positionRepository;
         private readonly IMapper _mapper;
+
         public CreatePositionCommandHandler(IPositionRepositoryAsync positionRepository, IMapper mapper)
         {
             _positionRepository = positionRepository;

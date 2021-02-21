@@ -23,6 +23,7 @@ namespace AngularNgxDataTableBackend.Application.Helpers
 
             return FetchData(entities, requiredProperties);
         }
+
         public async Task<IEnumerable<Entity>> ShapeDataAsync(IEnumerable<T> entities, string fieldsString)
         {
             var requiredProperties = GetRequiredProperties(fieldsString);
@@ -36,7 +37,6 @@ namespace AngularNgxDataTableBackend.Application.Helpers
 
             return FetchDataForEntity(entity, requiredProperties);
         }
-
 
         private IEnumerable<PropertyInfo> GetRequiredProperties(string fieldsString)
         {

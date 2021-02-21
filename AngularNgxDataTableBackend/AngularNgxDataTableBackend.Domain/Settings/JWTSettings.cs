@@ -1,5 +1,4 @@
-﻿
-namespace AngularNgxDataTableBackend.Domain.Settings
+﻿namespace AngularNgxDataTableBackend.Domain.Settings
 {
     public class JWTSettings
     {
