@@ -43,7 +43,7 @@
             <summary>
             Support Ngx-DataTables https://medium.com/scrum-and-coke/angular-11-pagination-of-zillion-rows-45d8533538c0
             </summary>
-            <param name="command"></param>
+            <param name="query"></param>
             <returns></returns>
         </member>
         <member name="M:AngularNgxDataTableBackend.WebApi.Controllers.v1.PositionsController.Put(System.Guid,AngularNgxDataTableBackend.Application.Features.Positions.Commands.UpdatePosition.UpdatePositionCommand)">

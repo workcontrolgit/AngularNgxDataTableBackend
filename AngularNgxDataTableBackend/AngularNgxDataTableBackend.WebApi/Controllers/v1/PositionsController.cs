@@ -65,14 +65,14 @@ namespace AngularNgxDataTableBackend.WebApi.Controllers.v1
         /// <summary>
         /// Support Ngx-DataTables https://medium.com/scrum-and-coke/angular-11-pagination-of-zillion-rows-45d8533538c0
         /// </summary>
-        /// <param name="command"></param>
+        /// <param name="query"></param>
         /// <returns></returns>
         [HttpPost]
         [Route("Paged")]
         // [Authorize]
-        public async Task<IActionResult> Paged(PagedPositionsQuery command)
+        public async Task<IActionResult> Paged(PagedPositionsQuery query)
         {
-            return Ok(await Mediator.Send(command));
+            return Ok(await Mediator.Send(query));
         }
 
         /// <summary>
