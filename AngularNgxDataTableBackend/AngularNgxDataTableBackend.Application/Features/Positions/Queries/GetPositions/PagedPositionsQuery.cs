@@ -40,7 +40,7 @@ namespace AngularNgxDataTableBackend.Application.Features.Positions.Queries.GetP
             var validFilter = new GetPositionsQuery();
 
             // Draw map to PageNumber
-            validFilter.PageNumber = request.Draw;
+            validFilter.PageNumber = (request.Start / request.Length) + 1;
             // Length map to PageSize
             validFilter.PageSize = request.Length;
 
